@@ -4,7 +4,7 @@ package linkedlist;
 public class Q1 {
 	
 	//using 2 ptr
-	public int getN_NodeFromEnd(LinkedList list, int n) {
+	public static int getN_NodeFromEnd(LinkedList list, int n) {
 		
 		if(list.getHead() == null)
 			return -1;
@@ -33,7 +33,7 @@ public class Q1 {
 		return nNode.getData();	
 	}
 
-	public int recursiveGetN_NodeFromEnd(ListNode ptr, ListNode nNode, int n) {
+	public static int recursiveGetN_NodeFromEnd(ListNode ptr, ListNode nNode, int n) {
 		
 		if(n<1)
 			return -1;
@@ -57,8 +57,8 @@ public class Q1 {
 		return recursiveGetN_NodeFromEnd(cptr, cnNode, cn);
 	}
 	
-	int count=0;
-	public int recursiveN_Node2(ListNode node, int n) {
+	static int count=0;
+	public static int recursiveN_Node2(ListNode node, int n) {
 		
 		if(node == null)
 			return -1;

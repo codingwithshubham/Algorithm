@@ -3,7 +3,8 @@ package linkedlist;
 //reverse linked list
 public class Q3 {
 	
-	public void reverse(LinkedList myList) {
+	//resvesing by swapping node.data (O(n2))
+	public static void reverse1(LinkedList myList) {
 		
 		if(myList.getHead() == null)
 			return;
@@ -41,6 +42,40 @@ public class Q3 {
 			frontIndex++;
 			endIndex--;
 		}
+		
+	}
+	
+	//reverse by reversing links
+	public static ListNode reverse2(ListNode head) {
+		ListNode prev = null, cur = head;
+		
+		while(cur != null) {
+			ListNode next = cur.getNext();
+			cur.setNext(prev);
+			prev = cur;
+			cur = next;
+		}
+		return prev;
+	}
+	
+	//recursive
+	public static ListNode reverseRecursive(ListNode head) {
+		
+		if(head == null)
+			return null;
+		
+		if(head.getNext() == null)
+			return head;
+			
+		ListNode newHead = reverseRecursive(head.getNext());
+		
+		ListNode next = head.getNext();
+		
+		next.setNext(head);
+		
+		head.setNext(null);
+		
+		return newHead;
 		
 	}
 

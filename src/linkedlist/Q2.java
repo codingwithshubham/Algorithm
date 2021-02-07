@@ -2,7 +2,7 @@ package linkedlist;
 //insert into sorted List
 public class Q2 {
 	
-	public void insertInSorted(LinkedList myList, int data) {
+	public static void insertInSorted(LinkedList myList, int data) {
 		ListNode node = new ListNode(data);
 		
 		if(myList.getHead() == null) {

@@ -173,6 +173,23 @@ public class LinkedList {
 		System.out.println(curNode.getData());
 		
 	}
+	
+public void print(ListNode head) {
+		
+		if(head == null)
+			return;
+		
+		ListNode curNode = head;
+		
+		while(curNode.getNext() != null) {
+			System.out.print(curNode.getData()+"->");
+			
+			curNode = curNode.getNext();
+		}
+		
+		System.out.println(curNode.getData());
+		
+	}
 
 }
 
