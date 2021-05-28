@@ -3,7 +3,7 @@ package tree;
  * check if tree is mirror of other bt
  */
 public class Q13 {
-	 public boolean isMirror(TreeNode root1, TreeNode root2){
+	 public static boolean isMirror(TreeNode root1, TreeNode root2){
 	        
 	        if(root1 == null && root2 == null)
 	            return true;

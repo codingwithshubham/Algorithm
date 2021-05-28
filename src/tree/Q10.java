@@ -5,7 +5,7 @@ import java.util.*;
  */
 public class Q10 {
 	//recursive
-	public List<String> binaryTreePaths(TreeNode root) {
+	public static List<String> binaryTreePaths(TreeNode root) {
         List<String> list = new ArrayList<>();
         int[] arr = new int[100];
         print(root, arr, 0, list);
@@ -13,7 +13,7 @@ public class Q10 {
         return list;
     }
     
-    void print(TreeNode root, int[] arr, int level, List<String> list){
+	static void print(TreeNode root, int[] arr, int level, List<String> list){
         
         if(root!=null){
             arr[level] = root.data;
@@ -36,7 +36,7 @@ public class Q10 {
     }
     
 	//iterative array based
-	public List<String> binaryTreePaths1(TreeNode root) {
+	public static List<String> binaryTreePaths1(TreeNode root) {
         
         ArrayList<String> list = new ArrayList();
         
@@ -100,7 +100,7 @@ public class Q10 {
     }
 	
 	//iterative
-	public List<String> binaryTreePaths2(TreeNode root) {
+	public static List<String> binaryTreePaths2(TreeNode root) {
         
         ArrayList<String> list = new ArrayList();
         

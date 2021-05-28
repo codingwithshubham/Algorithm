@@ -1,9 +1,11 @@
 package tree;
 import java.util.*;
-
+/*
+ *  delete node from bt
+ */
 public class Q9 {
 	
-	public TreeNode deletionBT(TreeNode root, int key){
+	public static TreeNode deletionBT(TreeNode root, int key){
         //Write your code here and return the root of the changed tree
         
         if(root!=null){

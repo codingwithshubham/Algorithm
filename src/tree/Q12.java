@@ -6,7 +6,7 @@ import java.util.*;
 public class Q12 {
 
 	//recursive
-	public TreeNode invertTree(TreeNode root) {
+	public static TreeNode invertTree(TreeNode root) {
         
         if(root!=null){
             TreeNode node = root.left;
@@ -19,7 +19,7 @@ public class Q12 {
     }
 	
 	//iterative
-	public TreeNode invertTree1(TreeNode root) {
+	public static TreeNode invertTree1(TreeNode root) {
         
         if(root!=null){
             
