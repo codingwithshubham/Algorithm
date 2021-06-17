@@ -29,6 +29,7 @@ public class Main {
 		 *                 7
 		 */
 		
+		System.out.println(Q32.depth2(new int[] {-1}));
 //		Integer[] treeArr = new Integer[] {1,2,3,4,5,6,7,8,9};
 //		
 //		Integer[] arr = new Integer[9];
