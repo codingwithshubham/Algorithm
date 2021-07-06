@@ -1,7 +1,7 @@
 package graph;
 import java.util.*;
 /*
- * detect cycle
+ * detect cycle undirected
  */
 
 public class Q3 {
