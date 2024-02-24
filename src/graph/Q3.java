@@ -55,7 +55,8 @@ public class Q3 {
 	static boolean cycleBFS(int node, boolean[] visited, ArrayList<ArrayList<Integer>> adj) {
 		
 		LinkedList<Integer> queue = new LinkedList<>();
-		LinkedList<Integer> par = new LinkedList<>();
+		LinkedList<Integer> par = new LinkedList<>(); // this is wrong, use visited in driver class, as here with each call the par is
+								// initialised.
 		
 		queue.offer(node);
 		par.offer(-1);
